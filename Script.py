@@ -1,9 +1,16 @@
 from tabulate import tabulate
 
 class Transaction:
-    data_item = { "Nama item" :  [], "Jumlah item" : [], "Harga item" : [], "Total harga" : []}
+    data_item = { 
+        "Nama item"   : [], 
+        "Jumlah item" : [], 
+        "Harga item"  : [], 
+        "Total harga" : []}
 
     def add_item(self, name, qty, price):
+        '''
+        Menambahkan item ke dalam transaksi.
+        '''
         try:
             # Cek tipe data
             if type(name) != str:
@@ -25,6 +32,9 @@ class Transaction:
             print(f"Terjadi kesalahan: Tipe data salah")
 
     def update_item_name(self, name, update_name ):
+        '''
+        Mengupdate nama item dalam transaksi.
+        '''
         try:
             if type(name) != str:
                 raise TypeError("Nama item harus berupa string.")
@@ -42,6 +52,9 @@ class Transaction:
 
 
     def update_item_qty(self, qty, update_qty):
+        '''
+        Mengupdate jumlah item dalam transaksi.
+        '''
         try:
             if type(qty) != str:
                 raise TypeError("Nama item harus berupa string.")
@@ -50,7 +63,8 @@ class Transaction:
 
             qty_update = self.data_item["Jumlah item"].index(qty)
             self.data_item["Jumlah item"][qty_update] = update_qty
-            self.data_item["Total harga"][qty_update] = update_qty * self.data_item["Harga item"][qty_update]
+            self.data_item["Total harga"][qty_update] = update_qty * \
+            self.data_item["Harga item"][qty_update]
             return print(f'Data item yang diubah{self.data_item}')
            
         except TypeError:
@@ -59,6 +73,10 @@ class Transaction:
             print(f'Nama item {update_qty} tidak ditemukan dalam data.')
     
     def update_item_price(self, price, update_price):
+
+        '''
+        Mengupdate harga item dalam transaksi.
+        '''
         try:
             if type(price) != str:
                 raise TypeError("Nama item harus berupa string.")
@@ -77,6 +95,9 @@ class Transaction:
             print(f'Nama item {update_price} tidak ditemukan dalam data.')
 
     def delete_item(self, delete_update):
+        '''
+        Menghapus item dari transaksi.
+        '''
         try:
             if type(delete_update) != str:
                 raise TypeError("Nama item yang akan dihapus harus berupa string.")
@@ -101,7 +122,10 @@ class Transaction:
     
     def check_order(self):
         '''
-        Melakukan pengecekan terhadap seluruh item apakah terdapat nilai null
+        Melakukan pengecekan terhadap seluruh item apakah terdapat nilai null.
+        Jika semua item memiliki nilai, mencetak "Order tersedia".
+        Jika ada item yang tidak memiliki nilai, mencetak "Order tidak ada".
+
         '''
         try:
 
