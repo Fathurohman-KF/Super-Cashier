@@ -1,8 +1,8 @@
-#Latar Belakang
+# Latar Belakang
 Andi adalah seorang pemilik supermarket besar di salah satu kota di Indonesia. Andi memiliki rencana untuk melakukan perbaikan proses bisnis, yaitu Andi akan membuat sistem kasir yang self-service di supermarket miliknya. Sehingga customer bisa langsung memasukkan item yang dibell, jumlah item yang dibell, dan harga item yang dibell dan fitur yang lain.
 Sehingga customer yang tidak berada di kota tersebut bisa membeli barang dari supermarket tersebut. Setelah Andi melakukan riset, ternyata Andi memiliki masalah, yaitu Andi membutukan Programmer untuk membuatkan fitur - fitur agar bisa sistem kasir self-service di supermarket itu bisa berjalan dengan lancar
 
-#Requirements atau Objective
+# Requirements atau Objective
 
 1. Costumer membuat ID transaksi customer dengan membuat object dari class. Sebagai contoh, trnsct_123 = Transaction()
 2. Customer meng-input nama item, jumlah item, dan harga barang dengan method add_item()
@@ -29,9 +29,11 @@ Sehingga customer yang tidak berada di kota tersebut bisa membeli barang dari su
 - Jika total belanja diatas Rp 300.000 maka akan mendapatkan diskon 8%
 - Jika total belanja diatas Rp 500.000 maka akan mendapatkan diskon 10%
 
-#Flowchart
+# Flowchart
+<img src="https://github.com/Fathurohman-KF/Super-Cashier/blob/main/Img/Flowchart.jpg" alt="Flowchart">
 
-#Penjelasan
+
+# Penjelasan
 
 1. data_item = { "Nama item" : [], "Jumlah item" : [], "Harga item" : [], "Total harga" : []}
    = Untuk menampung data dalam transaksi
@@ -44,26 +46,44 @@ Sehingga customer yang tidak berada di kota tersebut bisa membeli barang dari su
 8. check_order() = Untuk melakukan pengecekan pada seluruh item transaksi
 9. total_price() = Untuk menghitung total harga belanja pada seluruh item transaksi
 
-#Test Case
-##Test 1:
-###Customer ingin menambahkan dua item baru menggunakan method add_item () . Item yang ditambahkan adalah sebagai berikut:
-• Nama Item: Ayam Goreng, Qty: 2, Harga: 20000
+# Test Case
+## Test 1:
+#### Customer ingin menambahkan dua item baru menggunakan method add_item () . Item yang ditambahkan adalah sebagai berikut:
+• Nama Item: Ayam Goreng, Qty: 2, Harga: 20000 
+
 • Nama Item: Pasta Gigi, Qty: 3, Harga: 15000
 
-##Test 2
-###Ternyata Customer salah membeli salah satu item dari belanjaan yang sudah ditambahki maka Customer menggunakan method delete_item () untuk menghapus item. Item y ingin dihapuskan adalah Pasta Gigi.
+<img src=https://github.com/Fathurohman-KF/Super-Cashier/blob/main/Img/Menambahkan_item.png alt="Add item">
 
-##Test 3
-###Ternyata setelah dipikir - pikir Customer salah memasukkan item yang ingin dibelanjakan!
-###Daripada menghapusnya satu - satu, maka Customer cukup menggunakan method reset_transaction () untuk menghapus semua item yang sudah ditambahkan.
 
-##Test 4
-###Setelah Customer selesai berbelanja, akan menghitung total belanja yang harus dibay menggunakan method total_price () . Sebelum mengeluarkan output total belanja menampilkan item - item yang dibeli.
+#### Hasil
+<img src=https://github.com/Fathurohman-KF/Super-Cashier/blob/main/Img/hasil_case1.png alt="Hasil">
 
-#Kesimpulan
+## Test 2
+#### Ternyata Customer salah membeli salah satu item dari belanjaan yang sudah ditambahki maka Customer menggunakan method delete_item () untuk menghapus item. Item y ingin dihapuskan adalah Pasta Gigi.
+<img src=https://github.com/Fathurohman-KF/Super-Cashier/blob/main/Img/case2.png alt="Delete">
+
+#### Hasil
+<img src=https://github.com/Fathurohman-KF/Super-Cashier/blob/main/Img/hasil%20case%202.png alt="Hasil">
+
+
+## Test 3
+#### Ternyata setelah dipikir - pikir Customer salah memasukkan item yang ingin dibelanjakan!
+#### Daripada menghapusnya satu - satu, maka Customer cukup menggunakan method reset_transaction () untuk menghapus semua item yang sudah ditambahkan.
+<img src=https://github.com/Fathurohman-KF/Super-Cashier/blob/main/Img/case%203.png alt="Reset">
+
+
+## Test 4
+#### Setelah Customer selesai berbelanja, akan menghitung total belanja yang harus dibay menggunakan method total_price () . Sebelum mengeluarkan output total belanja menampilkan item - item yang dibeli.
+<img src=https://github.com/Fathurohman-KF/Super-Cashier/blob/main/Img/case%204.png alt="Code">
+<img src="https://github.com/Fathurohman-KF/Super-Cashier/blob/main/Img/case%205.png" alt="Hasil">
+
+
+# Kesimpulan
 Andi membuat program supermarket yang bertujuan untuk memudahkan customer dalam melakukan transaski di dalam supermarket.
 Supermarket telah menjadi tempat yang sangat membantu bagi kebanyakan orang untuk memperoleh barang atau makanan yang mereka butuhkan. Supermarket menyediakan berbagai barang dalam satu tempat, memungkinkan orang untuk berbelanja secara efisien. Program ini akan meningkatkan efisiensi baik bagi customer maupun supermarket.
 
-#Saran Pengembangan
-*Bisa menambahkan database agar memperlancar program
-*Pengembangan dalam metode pembayaran
+# Saran Pengembangan
+* Bisa menambahkan database agar memperlancar program
+
+* Pengembangan dalam metode pembayaran
