@@ -46,19 +46,19 @@ Sehingga customer yang tidak berada di kota tersebut bisa membeli barang dari su
 
 # Test Case
 ## Test 1:
-### Customer ingin menambahkan dua item baru menggunakan method add_item () . Item yang ditambahkan adalah sebagai berikut:
+#### Customer ingin menambahkan dua item baru menggunakan method add_item () . Item yang ditambahkan adalah sebagai berikut:
 • Nama Item: Ayam Goreng, Qty: 2, Harga: 20000
 • Nama Item: Pasta Gigi, Qty: 3, Harga: 15000
 
 ## Test 2
-### Ternyata Customer salah membeli salah satu item dari belanjaan yang sudah ditambahki maka Customer menggunakan method delete_item () untuk menghapus item. Item y ingin dihapuskan adalah Pasta Gigi.
+#### Ternyata Customer salah membeli salah satu item dari belanjaan yang sudah ditambahki maka Customer menggunakan method delete_item () untuk menghapus item. Item y ingin dihapuskan adalah Pasta Gigi.
 
 ## Test 3
-### Ternyata setelah dipikir - pikir Customer salah memasukkan item yang ingin dibelanjakan!
-### Daripada menghapusnya satu - satu, maka Customer cukup menggunakan method reset_transaction () untuk menghapus semua item yang sudah ditambahkan.
+#### Ternyata setelah dipikir - pikir Customer salah memasukkan item yang ingin dibelanjakan!
+#### Daripada menghapusnya satu - satu, maka Customer cukup menggunakan method reset_transaction () untuk menghapus semua item yang sudah ditambahkan.
 
 ## Test 4
-### Setelah Customer selesai berbelanja, akan menghitung total belanja yang harus dibay menggunakan method total_price () . Sebelum mengeluarkan output total belanja menampilkan item - item yang dibeli.
+#### Setelah Customer selesai berbelanja, akan menghitung total belanja yang harus dibay menggunakan method total_price () . Sebelum mengeluarkan output total belanja menampilkan item - item yang dibeli.
 
 # Kesimpulan
 Andi membuat program supermarket yang bertujuan untuk memudahkan customer dalam melakukan transaski di dalam supermarket.
